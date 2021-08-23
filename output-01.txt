@@ -1,0 +1,46 @@
+*******(ใส่มาตามระบุไว้ใน README.txt)*******
+Output :
+---------- WELCOME TO NEKO GAME SHOP ----------
+        /\_______/\      /\_______/\
+      ~( > o. o < )      ( > o .o < )~
+-----------------------------------------------
+            < Promotion in August >
+10% discount when purchasing 1500 baht or more.
+20% discount when purchasing 2500 baht or more.
+30% discount when purchasing 4000 baht or more.
+40% discount when purchasing 5000 baht or more.
+-----------------------------------------------
+            Type 'ONLY' uppercase.
+-----------------------------------------------
+    Type S to enter the payment process.
+-----------------------------------------------
+              < List of games >
+-----------------------------------------------
+< Page 1 / 3 >
+[A] Naruto Shippuden Ultimate Ninja Storm 4 - 390 Baht
+[B] Dead Bt Daylight - 349 Baht
+[C] Cities Skylines - 299 Baht
+[D] Sekiro : Shadows Die Twice - 1390 Baht
+[E] Resident Evil Village - 1199 Baht
+Page < [1] 2 3 >
+Enter character : A
+Add Naruto Shippuden Ultimate Ninja Storm 4 in your card
+Enter character : B
+Add Dead Bt Daylight in your card
+Enter character : C
+Add Cities Skylines in your card
+Enter character : S
+-----------------------------------------------
+            < payment process >
+-----------------------------------------------
+                /\_______/\
+            $$~( > o . o < )~
+-----------------------------------------------
+< My card >
+Naruto Shippuden Ultimate Ninja Storm 4  390 Baht
+Dead Bt Daylight                         349 Baht
+Cities Skylines                          299 Baht
+-----------------------------------------------
+You get all discounts                      0 Baht
+Total Price :                           1038 Baht
+-----------------------------------------------

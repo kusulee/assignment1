@@ -1,0 +1,187 @@
+โจทย์ปัญหาที่ตั้งขึ้นมา คือ
+ร้านค้า NEKO GAME เป็นร้านขายเกมที่ต้องการให้ช่วยเขียนรับออเดอร์ที่จะสั่งซื้อเข้ามาโดยที่
+1. สามารถซื้อเกม 1 เกมต่อครั้งเท่านั้น คือ ซื้อกี่เกมก็ได้แต่ได้แค่ครั้งเดียว (เพื่อปกป้องกันการซื้อไปขายต่อ)
+2. ร้านค้านี้มีส่วนลดประจำเดือน สิงหาคม ได้แก่ 
+ลด 10% เมื่อซื้อครบ 1500 บาท
+ลด 20% เมื่อซื้อครบ 2500 บาท
+ลด 30% เมื่อซื้อครบ 4000 บาท
+ลด 40% เมื่อซื้อครบ 5000 บาท
+Input 
+- จะเป็นอักษรภาษาอังกฤษตัวใหญ่ A-O
+- สามารถพิมพ์เลข 1-3 เพื่อเปลี่ยนหน้ารายการได้
+- เมื่อซื้อสินค้าได้ตามความพอใจแล้วให้พิมพ์ S เพื่อที่จะเข้าสู่กระบวนการคิดเงิน
+Output
+- ถ้าอินพุตนอกเหนือจาก A-O S และ 1-3 ที่กล่าวมาจะแสดงคำว่า "Please try again" 
+- โดยแต่ละครั้งที่กรอกอักษรไปจะแสดงชื่อเกมออกมาเพื่อให้รู้ว่าเกมนี้เข้าไปอยู่ในตะกร้าเราแล้ว
+- หลังจากที่อินพุตเป็น S แล้วจะแสดง สินค้าทั้งหมดที่อยู่ในตะกร้าและราคา
+- ต่อมาจะเป็นการแสดงส่วนลดที่ได้รับ
+- สุดท้ายแสดงยอดเงินทั้งหมดที่ต้องจ่าย
+
+**กรณีที่ สมมติอยู่ในหน้ารายการที่ 1 ที่ต้องพิมพ์ A-E แต่ดันไปพิมพ์ F-J หรือ K-O ที่อยู่ในรายการที่สองและที่สาม
+เกมอยู่ในรายการที่สองหรือสามนั้นสามารถเพิ่มเข้าไปในตะกร้าเราได้เช่นกัน (เผื่อคนซื้อรักในการสุ่ม)
+
+ตัวอย่าง 1 (ตรงที่ดอกจันทร์ไว้คือ input)
+---------- WELCOME TO NEKO GAME SHOP ----------
+        /\_______/\      /\_______/\
+      ~( > o. o < )      ( > o .o < )~
+-----------------------------------------------
+            < Promotion in August >
+10% discount when purchasing 1500 baht or more.
+20% discount when purchasing 2500 baht or more.
+30% discount when purchasing 4000 baht or more.
+40% discount when purchasing 5000 baht or more.
+-----------------------------------------------
+            Type 'ONLY' uppercase.
+-----------------------------------------------
+    Type S to enter the payment process.
+-----------------------------------------------
+              < List of games >
+-----------------------------------------------
+< Page 1 / 3 >
+[A] Naruto Shippuden Ultimate Ninja Storm 4 - 390 Baht
+[B] Dead Bt Daylight - 349 Baht
+[C] Cities Skylines - 299 Baht
+[D] Sekiro : Shadows Die Twice - 1390 Baht
+[E] Resident Evil Village - 1199 Baht
+Page < [1] 2 3 >
+**Enter character : 2
+< Page 2 / 3 >
+[F] Jump Force - 490 Baht
+[G] The Evil Whthin 2 - 399 Baht
+[H] Planet Zoo Deluxe Edition - 800 Baht
+[I] Monster Hunter World - 699 Baht
+[J] Final Fantasy XV Windows Edition - 790 Baht
+Page < 1 [2] 3 >
+**Enter character : 3
+< Page 3 / 3 >
+[K] Human : Fall Flat - 290 Baht
+[L] Planet Coaster - 499 Baht
+[M] Darksoul III - 990 Baht
+[N] Mad Max - 290 Baht
+[O] No Man's Sky - 790 Baht
+Page < 1 2 [3] >
+**Enter character : S
+-----------------------------------------------
+            < payment process >
+-----------------------------------------------
+                /\_______/\
+            $$~( > o . o < )~
+-----------------------------------------------
+< My card >
+-----------------------------------------------
+You get all discounts                      0 Baht
+Total Price :                              0 Baht
+-----------------------------------------------
+
+ตัวอย่าง 2 (ตรงที่ดอกจันทร์ไว้คือ input)
+
+---------- WELCOME TO NEKO GAME SHOP ----------
+        /\_______/\      /\_______/\
+      ~( > o. o < )      ( > o .o < )~
+-----------------------------------------------
+            < Promotion in August >
+10% discount when purchasing 1500 baht or more.
+20% discount when purchasing 2500 baht or more.
+30% discount when purchasing 4000 baht or more.
+40% discount when purchasing 5000 baht or more.
+-----------------------------------------------
+            Type 'ONLY' uppercase.
+-----------------------------------------------
+    Type S to enter the payment process.
+-----------------------------------------------
+              < List of games >
+-----------------------------------------------
+< Page 1 / 3 >
+[A] Naruto Shippuden Ultimate Ninja Storm 4 - 390 Baht
+[B] Dead Bt Daylight - 349 Baht
+[C] Cities Skylines - 299 Baht
+[D] Sekiro : Shadows Die Twice - 1390 Baht
+[E] Resident Evil Village - 1199 Baht
+Page < [1] 2 3 >
+**Enter character : A
+Add Naruto Shippuden Ultimate Ninja Storm 4 in your card
+**Enter character : B
+Add Dead Bt Daylight in your card
+**Enter character : C
+Add Cities Skylines in your card
+**Enter character : 2
+< Page 2 / 3 >
+[F] Jump Force - 490 Baht
+[G] The Evil Whthin 2 - 399 Baht
+[H] Planet Zoo Deluxe Edition - 800 Baht
+[I] Monster Hunter World - 699 Baht
+[J] Final Fantasy XV Windows Edition - 790 Baht
+Page < 1 [2] 3 >
+**Enter character : F
+Add Jump Force in your card
+**Enter character : G
+Add The Evil Whthin 2 in your card
+**Enter character : 3
+< Page 3 / 3 >
+[K] Human : Fall Flat - 290 Baht
+[L] Planet Coaster - 499 Baht
+[M] Darksoul III - 990 Baht
+[N] Mad Max - 290 Baht
+[O] No Man's Sky - 790 Baht
+Page < 1 2 [3] >
+**Enter character : O
+Add No Man's Sky in your card
+**Enter character : S
+-----------------------------------------------
+            < payment process >
+-----------------------------------------------
+                /\_______/\
+            $$~( > o . o < )~
+-----------------------------------------------
+< My card >
+Naruto Shippuden Ultimate Ninja Storm 4  390 Baht
+Dead Bt Daylight                         349 Baht
+Cities Skylines                          299 Baht
+Jump Force                               490 Baht
+The Evil Whthin 2                        399 Baht
+-----------------------------------------------
+You get all discounts                    543 Baht
+Total Price :                           2174 Baht
+-----------------------------------------------
+
+ตัวอย่าง 3 (ตรงที่ดอกจันทร์ไว้คือ input)
+---------- WELCOME TO NEKO GAME SHOP ----------
+        /\_______/\      /\_______/\
+      ~( > o. o < )      ( > o .o < )~
+-----------------------------------------------
+            < Promotion in August >
+10% discount when purchasing 1500 baht or more.
+20% discount when purchasing 2500 baht or more.
+30% discount when purchasing 4000 baht or more.
+40% discount when purchasing 5000 baht or more.
+-----------------------------------------------
+            Type 'ONLY' uppercase.
+-----------------------------------------------
+    Type S to enter the payment process.
+-----------------------------------------------
+              < List of games >
+-----------------------------------------------
+< Page 1 / 3 >
+[A] Naruto Shippuden Ultimate Ninja Storm 4 - 390 Baht
+[B] Dead Bt Daylight - 349 Baht
+[C] Cities Skylines - 299 Baht
+[D] Sekiro : Shadows Die Twice - 1390 Baht
+[E] Resident Evil Village - 1199 Baht
+Page < [1] 2 3 >
+**Enter character : t
+Please try again
+**Enter character : 5
+Please try again
+**Enter character : Q
+Please try again
+**Enter character : S
+            < payment process >
+-----------------------------------------------
+                /\_______/\
+            $$~( > o . o < )~
+-----------------------------------------------
+< My card >
+-----------------------------------------------
+You get all discounts                      0 Baht
+Total Price :                              0 Baht
+-----------------------------------------------
